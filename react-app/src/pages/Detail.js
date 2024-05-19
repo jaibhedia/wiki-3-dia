@@ -18,6 +18,7 @@ import IpfsGetObject from "../components/ipfs/IpfsGetObject";
 import IpfsCreateObject from "../components/ipfs/IpfsCreateObject";
 import Stack from "@mui/material/Stack";
 
+
 const Detail = () => {
   const navigate = useNavigate();
 
@@ -66,7 +67,7 @@ const Detail = () => {
 
   const forceCloseProposal = async (proposalId) => {
     const key = "test-content-1.json";
-    const bucket = "web3-wiki";
+    const bucket = "wiki3dia";
     await daoInst.forceClose(proposalId);
     if (goodState > badState) {
       alert("This proposal got approval of the majority and be marged.");
@@ -99,7 +100,7 @@ const Detail = () => {
   useEffect(() => {
     const _getobject = async () => {
       const key = "test-content-1.json";
-      const bucket = "web3-wiki";
+      const bucket = "wiki3dia";
       await IpfsCreateObject(ipfsdoc, bucket, key, "text/plain");
     };
     _getobject();

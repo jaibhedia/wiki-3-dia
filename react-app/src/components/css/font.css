@@ -1,19 +1,89 @@
-#service-name{
-    font-size: 30px;
-    font-family: 'Pacifico', cursive;
+.container {
+  max-width: 1200px;
+  max-height: auto; /* Adjust as needed */
+  margin: 0 auto;
+  padding: 0 20px;
 }
 
-#page-title{
-    font-size: 40px;
-    font-family: 'Righteous', cursive;
+.content-container {
+  padding: 20px; /* Adjust padding as needed */
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+  border-radius: 10px; /* Rounded corners */
+  margin-top: 20px; /* Add space between service name and content */
 }
 
-
-#main-message{
-    font-size: 60px;
-    font-family: 'Righteous', cursive;
+#service-name {
+  font-size: 2rem;
+  font-weight: 900;
+  color: rgb(255, 255, 255);
+  text-align: left;
+  margin-bottom: 20px; /* Add space below service name */
 }
 
-#sub-message{
-    font-family: 'Raleway', sans-serif;
+#page-title {
+  color: aliceblue;
+  font-size: 40px;
+  font-family: 'Righteous', cursive;
+  margin-bottom: 20px; /* Add space below page title */
+}
+
+#main-message {
+  font-size: 35px;
+  font-weight: 1000;
+  color: aliceblue;
+  text-align: left;
+  margin-bottom: 20px; /* Add space below main message */
+}
+
+#sub-message {
+  font-size: 1rem;
+  color: aliceblue;
+  font-style: italic;
+  text-align: justify;
+  margin-bottom: 20px; /* Add space below sub message */
+}
+
+/* Media queries for responsive design */
+@media (max-width: 768px) {
+  .container {
+    padding: 0 10px;
+  }
+
+  #service-name {
+    font-size: 1.5rem;
+  }
+
+  #main-message {
+    font-size: 1.5rem;
+  }
+
+  #sub-message {
+    font-size: 0.875rem;
+  }
+
+  .content-container {
+    padding: 15px; /* Adjust padding as needed */
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    padding: 0 5px;
+  }
+
+  #service-name {
+    font-size: 1.25rem;
+  }
+
+  #main-message {
+    font-size: 1.25rem;
+  }
+
+  #sub-message {
+    font-size: 0.75rem;
+  }
+
+  .content-container {
+    padding: 10px; /* Adjust padding as needed */
+  }
 }

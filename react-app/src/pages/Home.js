@@ -16,7 +16,6 @@ import Button from '@mui/material/Button';
 import Stack from '@mui/material/Stack';
 import Typography from '@mui/material/Typography';
 
-
 const daoAbi = daoArtifact.abi;
 const daoAddr = "0xB16eCB9Ed22890a7f9116a0B5BcAe593E64FC71B";
 
@@ -97,46 +96,47 @@ const Home = () => {
   },[provider, signer, account]);
 
   return (
+    <div className="container">
     <div className="Home">
       <Header />
       <Box mt={10}>
         <Grid container rowSpacing={3} alignItems='center' justifyContent='center' direction="column">
-            <Typography component="div">
-              <Box id = "main-message" textAlign="center" m={1} mt={20}>
-              Why don’t you use web3Wiki?
-              </Box>
-            </Typography>
-            <Grid item mt={8}>
-              <SearchBar/>
-            </Grid>
-            <Typography component="div">
-              <Box id = "sub-message" textAlign="justify" m={1} mt={5}>
+          <Typography component="div">
+            <Box id="main-message" textAlign="center" m={1} mt={20}>
+              Why settle for less? Dive into the ultimate knowledge hub with Wiki3pedia!
+            </Box>
+          </Typography>
+          <Grid item mt={8}>
+            <SearchBar />
+          </Grid>
+          <Typography component="div">
+            <Box id="sub-message" textAlign="justify" m={1} mt={5}>
               This is the future wikipedia which connected with the web3 network.
-              </Box>
-              <Box id = "sub-message" textAlign="justify" m={1}>
+            </Box>
+            <Box id="sub-message" textAlign="justify" m={1}>
               Your knowledge will not only help other people, but also satisfy yourself.
-              </Box>
-            </Typography>
-
+            </Box>
+          </Typography>
           <Grid item xs={12}>
-          <Stack spacing={2} direction="row">
-            <ButtonComponent
-              color="primary"
-              name="New"
-              to="/create"
-              provider={provider}
-              signer={signer}
-              account={account}
-            />
-            {account ? (
+            <Stack spacing={2} direction="row">
+              <ButtonComponent
+                color="primary"
+                name="New"
+                to="/create"
+                provider={provider}
+                signer={signer}
+                account={account}
+              />
+              {account ? (
                 <Button disabled>Connected</Button>
               ) : (
                 <Button onClick={connectWallet}>Connected Wallet</Button>
               )}
-              </Stack>
-          </Grid>          
+            </Stack>
+          </Grid>
         </Grid>
       </Box>
+    </div>
     </div>
   );
 };

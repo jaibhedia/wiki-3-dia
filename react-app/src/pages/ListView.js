@@ -8,6 +8,7 @@ import SearchedItem from "../components/SearchedItem";
 import GetSearchReults from "../components/GetSearchResults";
 import PageTitle from "../components/PageTitle";
 import ButtonComponent from "../components/ButtonComponent";
+import '../components/css/SearchedItem.css';
 
 const ListView = () => {
   // Dummy data

@@ -12,6 +12,7 @@ import ButtonComponent from "../components/ButtonComponent";
 import { ethers } from "ethers";
 import IpfsCreateObject from "../components/ipfs/IpfsCreateObject";
 import store from "../store";
+import '../components/css/font.css';
 
 
 const Create = () => {
@@ -38,6 +39,7 @@ const Create = () => {
 
 
     return (
+      <div className="container">
     <div className="Create">
         <Header />
         <Box mt={10}>
@@ -52,7 +54,7 @@ const Create = () => {
             setvalue(data);
 
             // Dummy settings
-            const bucket = "web3-wiki";
+            const bucket = "wiki3dia";
             const key = "test-content-1.json";
 
             console.log(daoInst);
@@ -72,6 +74,7 @@ const Create = () => {
         </Grid>
         </Box>
     </div>
+   </div>
   )
 };
 

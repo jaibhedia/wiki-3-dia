@@ -1,0 +1,17 @@
+#glass-effect {
+    background: rgba(255, 255, 255, 0.1); /* Semi-transparent background */
+    backdrop-filter: blur(10px); /* Blur effect */
+    -webkit-backdrop-filter: blur(10px); /* For Safari support */
+    border: 1px solid rgba(255, 255, 255, 0.18); /* Optional border for frosted glass look */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional shadow for depth */
+  }
+
+  .logo-container {
+    height: 100%;
+    display: flex;
+    align-items: center;
+  }
+  
+  .logo-img {
+    height: 50px; /* Adjust the height as needed */
+  }

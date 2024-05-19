@@ -1,13 +1,115 @@
 body {
+  background: radial-gradient(
+    circle farthest-corner at top left,
+    rgb(43, 6, 89) 20%,
+    transparent 30%
+  ),
+  radial-gradient(
+    circle farthest-corner at top right,
+    rgb(43, 6, 89) 20%,
+    transparent 30%
+  ),
+  radial-gradient(
+    circle farthest-corner at bottom left,
+    rgb(43, 6, 89) 20%,
+    transparent 30%
+  ),
+  radial-gradient(
+    circle farthest-corner at bottom right,
+    rgb(43, 6, 89) 20%,
+    transparent 30%
+  ),
+  radial-gradient(
+    circle farthest-corner at center,
+    rgb(0, 0, 0),
+    rgb(0, 0, 0) 50%,
+    transparent 60%
+  );
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  min-height: 100vh; /* Ensures the background covers the whole viewport */
   margin: 0;
+  display: flex; /* Use flexbox to align items if needed */
+  align-items: center; /* Center items vertically */
+  justify-content: center; /* Center items horizontally */
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
+.glass-effect {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  border-radius: 10px;
+}
+
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+}
+
+#main-message {
+  font-size: 2rem;
+  font-weight: 900;
+  color: rgb(255, 255, 255);
+  text-align: left;
+}
+
+#sub-message {
+  font-size: 1rem;
+  color: rgb(255, 255, 255);
+  font-style: italic;
+  text-align: justify;
+}
+
+.SearchBar {
+  width: 100%; /* Make search bar full width */
+  margin-top: 20px; /* Adjust spacing */
+}
+
+.ButtonComponent {
+  margin-top: 20px; /* Adjust spacing */
+}
+
+/* Media queries for responsive design */
+@media (max-width: 768px) {
+  #main-message {
+    font-size: 1.5rem;
+  }
+
+  #sub-message {
+    font-size: 0.875rem;
+  }
+
+  .SearchBar {
+    margin-top: 15px; /* Adjust spacing for smaller screens */
+  }
+
+  .ButtonComponent {
+    margin-top: 15px; /* Adjust spacing for smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  #main-message {
+    font-size: 1.25rem;
+  }
+
+  #sub-message {
+    font-size: 0.75rem;
+  }
+
+  .SearchBar {
+    margin-top: 10px; /* Adjust spacing for even smaller screens */
+  }
+
+  .ButtonComponent {
+    margin-top: 10px; /* Adjust spacing for even smaller screens */
+  }
 }

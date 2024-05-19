@@ -1,13 +1,21 @@
-.SearchedItem {
-    position: relative;
-    margin-left: 5vh;
-    margin-bottom: 2vh;
+
+
+/* Container for each search result item */
+.SearchResult {
+  border: 1px solid #ddd; /* Border to separate each search result */
+  padding: 10px;
+  margin-bottom: 10px; /* Spacing between each search result */
 }
 
-.SearchedItem a {
-    position: absolute;
-    top: 0;
-    left: 0;
-    height:100%;
-    width: 100%;
+/* Title of the search result */
+.SearchResult-title {
+  font-size: 18px;
+  font-weight: bold;
+  color: #333; /* Dark color for the title */
+}
+
+/* Content of the search result */
+.SearchResult-content {
+  font-size: 14px;
+  color: #666; /* Slightly lighter color for the content */
 }
