@@ -66,7 +66,7 @@ const Detail = () => {
 
   const forceCloseProposal = async (proposalId) => {
     const key = "test-content-1.json";
-    const bucket = "web3-wiki";
+    const bucket = "wiki-3-dia";
     await daoInst.forceClose(proposalId);
     if (goodState > badState) {
       alert("This proposal got approval of the majority and be marged.");
@@ -86,8 +86,8 @@ const Detail = () => {
   const getVoteFromContract = async (_proposalId) => {
     const _res = await daoInst.viewProposalInformation(_proposalId);
     setRes(_res);
-    setGood(ethers.utils.formatUnits(_res[4], 0));
-    setBad(ethers.utils.formatUnits(_res[5], 0));
+    setGood(ethers.utils.formatUnits(_res[2], 0));
+    setBad(ethers.utils.formatUnits(_res[3], 0));
   };
 
   useEffect(() => {
@@ -99,7 +99,7 @@ const Detail = () => {
   useEffect(() => {
     const _getobject = async () => {
       const key = "test-content-1.json";
-      const bucket = "web3-wiki";
+      const bucket = "wiki-3-dia";
       await IpfsCreateObject(ipfsdoc, bucket, key, "text/plain");
     };
     _getobject();
@@ -162,13 +162,13 @@ const Detail = () => {
                     type="button"
                     onClick={async () => await forceCloseProposal(proposalId)}
                   >
-                    forced close button for Demo
+                    Forced Archive
                   </Button>
                 </div>
               ) : (
                 <div className="Closed">
                   <Button disabled variant="contained" type="button">
-                    forced close button for Demo
+                    Forced Archive
                   </Button>
                 </div>
               )}

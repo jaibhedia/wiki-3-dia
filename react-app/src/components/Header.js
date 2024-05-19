@@ -14,7 +14,7 @@ const Header = () => {
         <Toolbar>
           <Typography variant="h6" component="div" sx={{ flexGrow: 1}}>
             <Link href="/" underline="none" >
-              <div id = "service-name">web3Wiki</div>
+              <div id = "service-name">Wiki-3-Dia</div>
             </Link>
           </Typography>
           {/* {props.isconnected ? <Button disabled>Connected</Button> : <Button disabled>Connected</Button>} */}

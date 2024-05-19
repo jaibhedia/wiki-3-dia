@@ -122,7 +122,7 @@ const Modify = () => {
                 setvalue(data);
 
                 // Dummy settings
-                const bucket = "web3-wiki";
+                const bucket = "wiki-3-dia";
                 const key = "test-content-1.json";
                 const updatedKey = `modified-${key}`;
                 IpfsCreateObject(data, bucket, updatedKey, "text/plain");
