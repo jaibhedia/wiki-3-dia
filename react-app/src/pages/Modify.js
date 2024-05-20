@@ -123,7 +123,7 @@ const Modify = () => {
 
                 // Dummy settings
                 const bucket = "wiki-3-dia";
-                const key = "test-content-1.json";
+                const key = "test.json";
                 const updatedKey = `modified-${key}`;
                 IpfsCreateObject(data, bucket, updatedKey, "text/plain");
                 console.log(daoInst);

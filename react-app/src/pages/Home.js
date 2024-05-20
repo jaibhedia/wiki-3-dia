@@ -17,9 +17,8 @@ import Stack from '@mui/material/Stack';
 import Typography from '@mui/material/Typography';
 
 
-
 const daoAbi = daoArtifact.abi;
-const daoAddr = "0xB16eCB9Ed22890a7f9116a0B5BcAe593E64FC71B";
+const daoAddr = "0xa89aF259875bAab5fA0aA00e5B700A10201168B0";
 
 const Home = () => {
   const [account, setAccount] = useState();
@@ -104,7 +103,7 @@ const Home = () => {
         <Grid container rowSpacing={3} alignItems='center' justifyContent='center' direction="column">
             <Typography component="div">
               <Box id = "main-message" textAlign="center" m={1} mt={20}>
-              Why don’t you use web3Wiki?
+              Why don’t you use wiki-3-pedia?
               </Box>
             </Typography>
             <Grid item mt={8}>
@@ -121,14 +120,14 @@ const Home = () => {
 
           <Grid item xs={12}>
           <Stack spacing={2} direction="row">
-          <ButtonComponent
-  color="primary"
-  name="New"
-  to="/create"
-  provider={provider}
-  signer={signer}
-  account={account}
-/>
+            <ButtonComponent
+              color="primary"
+              name="New"
+              to="/create"
+              provider={provider}
+              signer={signer}
+              account={account}
+            />
             {account ? (
                 <Button disabled>Connected</Button>
               ) : (

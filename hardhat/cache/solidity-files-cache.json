@@ -1,9 +1,9 @@
 {
   "_format": "hh-sol-cache-2",
   "files": {
-    "/Users/taigamat/MyRoot/private/web3-wikipedia/hardhat/contracts/DAO.sol": {
-      "lastModificationDate": 1667719719859,
-      "contentHash": "2da28aa3fedd8493945c0397081a33e5",
+    "C:\\Users\\shann\\backwiki\\hardhat\\contracts\\DAO.sol": {
+      "lastModificationDate": 1716061656241,
+      "contentHash": "ac3914d58fde7cbfef5d4dba1c3f522e",
       "sourceName": "contracts/DAO.sol",
       "solcConfig": {
         "version": "0.8.4",
@@ -36,9 +36,9 @@
         "DAO"
       ]
     },
-    "/Users/taigamat/MyRoot/private/web3-wikipedia/hardhat/contracts/WikiToken.sol": {
-      "lastModificationDate": 1667683153782,
-      "contentHash": "bf38118bb861bd9c318e1a1002ddfbcc",
+    "C:\\Users\\shann\\backwiki\\hardhat\\contracts\\WikiToken.sol": {
+      "lastModificationDate": 1716062064011,
+      "contentHash": "9c699cdca444b49a45e0b77da099d8c4",
       "sourceName": "contracts/WikiToken.sol",
       "solcConfig": {
         "version": "0.8.4",
@@ -64,8 +64,7 @@
         }
       },
       "imports": [
-        "@openzeppelin/contracts/token/ERC20/ERC20.sol",
-        "hardhat/console.sol"
+        "@openzeppelin/contracts/token/ERC20/ERC20.sol"
       ],
       "versionPragmas": [
         "^0.8.0"
@@ -75,43 +74,8 @@
         "WikiToken"
       ]
     },
-    "/Users/taigamat/MyRoot/private/web3-wikipedia/hardhat/node_modules/hardhat/console.sol": {
-      "lastModificationDate": 1667463528065,
-      "contentHash": "4ff3cd2f6272c9a6516e9ee4f2b967d3",
-      "sourceName": "hardhat/console.sol",
-      "solcConfig": {
-        "version": "0.8.4",
-        "settings": {
-          "optimizer": {
-            "enabled": false,
-            "runs": 200
-          },
-          "outputSelection": {
-            "*": {
-              "*": [
-                "abi",
-                "evm.bytecode",
-                "evm.deployedBytecode",
-                "evm.methodIdentifiers",
-                "metadata"
-              ],
-              "": [
-                "ast"
-              ]
-            }
-          }
-        }
-      },
-      "imports": [],
-      "versionPragmas": [
-        ">= 0.4.22 <0.9.0"
-      ],
-      "artifacts": [
-        "console"
-      ]
-    },
-    "/Users/taigamat/MyRoot/private/web3-wikipedia/hardhat/node_modules/@openzeppelin/contracts/token/ERC20/ERC20.sol": {
-      "lastModificationDate": 1667466676412,
+    "C:\\Users\\shann\\backwiki\\hardhat\\node_modules\\@openzeppelin\\contracts\\token\\ERC20\\ERC20.sol": {
+      "lastModificationDate": 1716061721188,
       "contentHash": "af7bd64e1cfefbf6cb07f2adc1a25392",
       "sourceName": "@openzeppelin/contracts/token/ERC20/ERC20.sol",
       "solcConfig": {
@@ -149,43 +113,8 @@
         "ERC20"
       ]
     },
-    "/Users/taigamat/MyRoot/private/web3-wikipedia/hardhat/node_modules/@openzeppelin/contracts/token/ERC20/IERC20.sol": {
-      "lastModificationDate": 1667466676444,
-      "contentHash": "ad7c2d0af148c8f9f097d65deeb4da6b",
-      "sourceName": "@openzeppelin/contracts/token/ERC20/IERC20.sol",
-      "solcConfig": {
-        "version": "0.8.4",
-        "settings": {
-          "optimizer": {
-            "enabled": false,
-            "runs": 200
-          },
-          "outputSelection": {
-            "*": {
-              "*": [
-                "abi",
-                "evm.bytecode",
-                "evm.deployedBytecode",
-                "evm.methodIdentifiers",
-                "metadata"
-              ],
-              "": [
-                "ast"
-              ]
-            }
-          }
-        }
-      },
-      "imports": [],
-      "versionPragmas": [
-        "^0.8.0"
-      ],
-      "artifacts": [
-        "IERC20"
-      ]
-    },
-    "/Users/taigamat/MyRoot/private/web3-wikipedia/hardhat/node_modules/@openzeppelin/contracts/utils/Context.sol": {
-      "lastModificationDate": 1667466676392,
+    "C:\\Users\\shann\\backwiki\\hardhat\\node_modules\\@openzeppelin\\contracts\\utils\\Context.sol": {
+      "lastModificationDate": 1716061721056,
       "contentHash": "5f2c5c4b6af2dd4551027144797bc8be",
       "sourceName": "@openzeppelin/contracts/utils/Context.sol",
       "solcConfig": {
@@ -219,8 +148,8 @@
         "Context"
       ]
     },
-    "/Users/taigamat/MyRoot/private/web3-wikipedia/hardhat/node_modules/@openzeppelin/contracts/token/ERC20/extensions/IERC20Metadata.sol": {
-      "lastModificationDate": 1667466676444,
+    "C:\\Users\\shann\\backwiki\\hardhat\\node_modules\\@openzeppelin\\contracts\\token\\ERC20\\extensions\\IERC20Metadata.sol": {
+      "lastModificationDate": 1716061721413,
       "contentHash": "909ab67fc5c25033fe6cd364f8c056f9",
       "sourceName": "@openzeppelin/contracts/token/ERC20/extensions/IERC20Metadata.sol",
       "solcConfig": {
@@ -254,6 +183,41 @@
       ],
       "artifacts": [
         "IERC20Metadata"
+      ]
+    },
+    "C:\\Users\\shann\\backwiki\\hardhat\\node_modules\\@openzeppelin\\contracts\\token\\ERC20\\IERC20.sol": {
+      "lastModificationDate": 1716061721407,
+      "contentHash": "ad7c2d0af148c8f9f097d65deeb4da6b",
+      "sourceName": "@openzeppelin/contracts/token/ERC20/IERC20.sol",
+      "solcConfig": {
+        "version": "0.8.4",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "IERC20"
       ]
     }
   }

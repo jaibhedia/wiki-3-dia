@@ -29,7 +29,7 @@ const Ipfs2 = () => {
 
   useEffect(() => {
     (async () => {
-      const node = await IPFS.create('https://api.filebase.io/v1/ipfs/NzgwMzI2NUIwQ0ExMUI3NUY0NTg6Q0FMSnpCVG1hTDJxdGxhcDZlZ3FsUFdEbXUzYjBqd2RLZ0gxV2k3dzp3ZWIzLXdpa2k=');
+      const node = await IPFS.create('https://api.filebase.io/v1/ipfs/NzZEMTJFMkYzM0I1OTNBQUREOTE6cnAzNU5PRDZPMmZSa3BjeVV1OWgxNGY1TjdzMUFwdlZJak9RZlp1djp3aWtpLTMtZGlh');
       console.log(node);
       setIpfs(node);
 

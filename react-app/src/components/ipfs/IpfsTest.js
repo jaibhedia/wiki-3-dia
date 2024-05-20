@@ -17,7 +17,7 @@ const IpfsTest = () => {
       // const res = await IpfsCreateObject(data, "web3-wiki", "testKey1", "text/plain");
       // setIpfs(res);
       // console.log(res);
-      await IpfsGetObject(setResponse, "web3-wiki", "test-content-0.json")
+      await IpfsGetObject(setResponse, "wiki-3-dia", "")
     })()
   },[])
 

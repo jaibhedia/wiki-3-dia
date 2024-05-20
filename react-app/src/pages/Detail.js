@@ -26,7 +26,7 @@ const Detail = () => {
   const contents = state.contents;
   // const key = state.key;
   // For Demo
-  const key = "test-content-1.json";
+  const key = "test.json";
   const proposalId = "2";
 
   const daoInst = store.getState().setter.daoInst;
@@ -43,21 +43,24 @@ const Detail = () => {
   const goodinitState = 0;
   const badinitState = 0;
 
-  // For Botton status
+  // For Button status
   const [goodState, setGood] = useState(goodinitState);
   const [badState, setBad] = useState(badinitState);
   const [res, setRes] = useState();
   const [proposalState, setProposal] = useState(false);
   const [ipfsdoc, setIpfsdoc] = useState();
+  const [hasVoted, setHasVoted] = useState(false); // New state to track if user has voted
 
   const updateGood = async (proposalId) => {
     await daoInst.voteProposal(proposalId, true);
     setGood(Number(goodState) + 1);
+    setHasVoted(true); // Set hasVoted to true after voting
   };
 
   const updateBad = async (proposalId) => {
     await daoInst.voteProposal(proposalId, false);
     setBad(Number(badState) + 1);
+    setHasVoted(true); // Set hasVoted to true after voting
   };
 
   const contractCloseProposal = async (proposalId) => {
@@ -65,7 +68,7 @@ const Detail = () => {
   };
 
   const forceCloseProposal = async (proposalId) => {
-    const key = "test-content-1.json";
+    const key = "test.json";
     const bucket = "wiki-3-dia";
     await daoInst.forceClose(proposalId);
     if (goodState > badState) {
@@ -98,7 +101,7 @@ const Detail = () => {
 
   useEffect(() => {
     const _getobject = async () => {
-      const key = "test-content-1.json";
+      const key = "test.json";
       const bucket = "wiki-3-dia";
       await IpfsCreateObject(ipfsdoc, bucket, key, "text/plain");
     };
@@ -127,6 +130,7 @@ const Detail = () => {
                     type="button"
                     color="error"
                     onClick={async () => await updateGood(proposalId)}
+                    disabled={hasVoted} // Disable button if user has voted
                   >
                     Good: {goodState}
                   </Button>
@@ -135,6 +139,7 @@ const Detail = () => {
                     type="button"
                     color="info"
                     onClick={async () => await updateBad(proposalId)}
+                    disabled={hasVoted} // Disable button if user has voted
                   >
                     Bad: {badState}
                   </Button>
@@ -161,6 +166,7 @@ const Detail = () => {
                     variant="contained"
                     type="button"
                     onClick={async () => await forceCloseProposal(proposalId)}
+                    disabled={badState < 1} // Disable button if badState is less than 3
                   >
                     Forced Archive
                   </Button>
@@ -168,7 +174,7 @@ const Detail = () => {
               ) : (
                 <div className="Closed">
                   <Button disabled variant="contained" type="button">
-                    Forced Archive
+                    forced close button for Demo
                   </Button>
                 </div>
               )}
