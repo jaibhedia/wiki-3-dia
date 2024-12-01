@@ -1,4 +1,4 @@
-# web3-wikipedia
+# wiki-3-dia
 Our project is a web3 version of wikipedia. This project uses the DAO design concept to share your knowledge more precisely. web3 version of wikipedia works with metamask to allow you to share your knowledge with others.
 The system de-centralizes the construction of text-based collective knowledge with the following concepts
 
@@ -18,8 +18,8 @@ This type of token-earning system allows us to keep the quality of submissions u
 
 ## Getting Started
 ```
-git clone https://github.com/213yuka/web3-wikipedia.git
-cd web3-wikipedia/react-app
+git clone https://github.com/jaibhedia/wiki-3-dia
+cd wiki-3-dia
 npm install
 npm start
 ```
